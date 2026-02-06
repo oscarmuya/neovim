@@ -1,0 +1,17 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+*.swp
+*.swo
+*~
+.netrwhist
+
+.DS_Store
+
+nvim_data/
