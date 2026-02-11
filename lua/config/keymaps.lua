@@ -6,3 +6,17 @@ vim.keymap.set("n", "<leader>e", "<cmd>wincmd w<cr>", { desc = "Toggle between w
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Go down and center in page" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up and center in page" })
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without updating the register" })
+
+-- classic netrw
+vim.keymap.set("n", "<leader>t", "<cmd>Ex<cr>", { desc = "Open the classic Netrw" })
+
+-- tmux
+vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Move to left split" })
+vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>", { desc = "Move to below split" })
+vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>", { desc = "Move to above split" })
+vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Move to right split" })
+
+--- unbind ctrl space
+vim.keymap.del("n", "<C-Space>")
+vim.keymap.del("x", "<C-Space>")
+vim.keymap.del("o", "<C-Space>")
