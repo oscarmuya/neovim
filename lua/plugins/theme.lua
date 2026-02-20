@@ -1,1 +1,12 @@
-/home/oscar/.config/omarchy/current/theme/neovim.lua
+return {
+  {
+    "bjarneo/aether.nvim",
+    priority = 1000,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "aether",
+    },
+  },
+}
