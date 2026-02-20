@@ -5,3 +5,6 @@
 vim.opt.statuscolumn = ""
 
 vim.opt.fillchars:append({ eob = "~" })
+
+--- disable netrw banner
+vim.g.netrw_banner = 0

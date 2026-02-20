@@ -8,7 +8,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up and center in page" })
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without updating the register" })
 
 -- classic netrw
-vim.keymap.set("n", "<leader>t", "<cmd>Ex<cr>", { desc = "Open the classic Netrw" })
+vim.keymap.set("n", "<leader>t", "<cmd>tabnew | Ex<cr>", { desc = "Open netrw in a new tab" })
 
 -- tmux
 vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Move to left split" })
@@ -20,3 +20,6 @@ vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>", { desc = "Move to rig
 vim.keymap.del("n", "<C-Space>")
 vim.keymap.del("x", "<C-Space>")
 vim.keymap.del("o", "<C-Space>")
+
+---- shift k
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
