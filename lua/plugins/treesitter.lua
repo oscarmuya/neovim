@@ -18,6 +18,7 @@ return {
         "markdown_inline",
         "hcl",
         "go",
+        "java",
       },
     },
   },
