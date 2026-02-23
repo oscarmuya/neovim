@@ -8,7 +8,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up and center in page" })
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste without updating the register" })
 
 -- classic netrw
-vim.keymap.set("n", "<leader>t", "<cmd>tabnew | Ex<cr>", { desc = "Open netrw in a new tab" })
+-- vim.keymap.set("n", "<leader>t", "<cmd>tabnew | Ex<cr>", { desc = "Open netrw in a new tab" })
+vim.keymap.set("n", "<leader>t", "<CMD>Oil --float<CR>", { desc = "Open file explorer (float)" })
 
 -- tmux
 vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>", { desc = "Move to left split" })
@@ -23,3 +24,8 @@ vim.keymap.del("o", "<C-Space>")
 
 ---- shift k
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
+--- leader leader cwd
+vim.keymap.set("n", "<leader><leader>", function()
+  require("lazyvim.util").pick("files", { root = false })()
+end, { desc = "Find Files (cwd)" })
