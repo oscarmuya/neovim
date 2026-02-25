@@ -22,22 +22,26 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## General
 
-`<leader>w` - Save file
-`<leader>e` - Toggle between windows
-`<C-d>` / `<C-u>` - Scroll down/up and center
-`<leader>p` - Paste without yanking (visual)
-`<leader>t` - Open Oil file explorer (float)
-`<C-h/j/k/l>` - Navigate tmux/vim splits
-`<C-_>` - Toggle terminal
+| Keymap | Description |
+|--------|-------------|
+| `<leader>w` | Save file |
+| `<leader>e` | Toggle between windows |
+| `<C-d>` / `<C-u>` | Scroll down/up and center |
+| `<leader>p` | Paste without yanking (visual) |
+| `<leader>t` | Open Oil file explorer (float) |
+| `<C-h/j/k/l>` | Navigate tmux/vim splits |
+| `<C-_>` | Toggle terminal |
 
 ## Harpoon
 
-`<leader>ha` - Add current file
-`<leader>hh` - Toggle quick menu
-`<leader>1-5` - Jump to slot 1-5
-`<leader>hp` - Previous file
-`<leader>hn` - Next file
-`<leader>ht` - Open with Telescope
+| Keymap | Description |
+|--------|-------------|
+| `<leader>ha` | Add current file |
+| `<leader>hh` | Toggle quick menu |
+| `<leader>1-5` | Jump to slot 1-5 |
+| `<leader>hp` | Previous file |
+| `<leader>hn` | Next file |
+| `<leader>ht` | Open with Telescope |
 
 ## Installation
 
