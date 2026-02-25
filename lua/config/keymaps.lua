@@ -29,3 +29,7 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover)
 vim.keymap.set("n", "<leader><leader>", function()
   require("lazyvim.util").pick("files", { root = false })()
 end, { desc = "Find Files (cwd)" })
+
+vim.keymap.set("n", "<C-_>", function()
+  Snacks.terminal.toggle()
+end, { desc = "Toggle Terminal" })
