@@ -14,6 +14,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Prevent nvim from interfering with alacritty cursor settings
+--
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function()
+    vim.opt.guicursor = "a:ver25-blinkon750-blinkoff750-blinkwait750"
+    vim.cmd("redraw")
+    io.write("\27[5 q")
+  end,
+})
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
@@ -26,6 +36,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.java" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
 
     -- import/override with your plugins
     { import = "plugins" },
