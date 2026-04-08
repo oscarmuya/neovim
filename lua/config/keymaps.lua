@@ -30,6 +30,14 @@ vim.keymap.set("n", "<leader><leader>", function()
   require("lazyvim.util").pick("files", { root = false })()
 end, { desc = "Find Files (cwd)" })
 
+--- terminal
 vim.keymap.set("n", "<C-_>", function()
   Snacks.terminal.toggle()
 end, { desc = "Toggle Terminal" })
+
+vim.keymap.set("t", "<C-_>", function()
+  Snacks.terminal.toggle()
+end, { desc = "Toggle Terminal" })
+
+-- code diagnostics
+vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
