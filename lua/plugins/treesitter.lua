@@ -1,7 +1,12 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
     opts = {
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
       ensure_installed = {
         "tsx",
         "typescript",
@@ -19,7 +24,10 @@ return {
         "hcl",
         "go",
         "java",
+        "yaml",
       },
+      sync_install = false,
+      auto_install = true,
     },
   },
 }
