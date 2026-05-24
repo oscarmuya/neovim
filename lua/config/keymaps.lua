@@ -41,3 +41,9 @@ end, { desc = "Toggle Terminal" })
 
 -- code diagnostics
 vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
+
+-- toggle autoformat
+vim.keymap.set("n", "<leader>uf", function()
+  vim.b.autoformat = not vim.b.autoformat
+  vim.notify("Autoformat " .. (vim.b.autoformat and "enabled" or "disabled"))
+end, { desc = "Toggle autoformat (buffer)" })
