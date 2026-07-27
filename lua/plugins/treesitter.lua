@@ -26,6 +26,8 @@ return {
         "java",
         "yaml",
         "svelte",
+        "vue",
+        "pug",
       },
       sync_install = false,
       auto_install = true,

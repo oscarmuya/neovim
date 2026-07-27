@@ -11,6 +11,7 @@ return {
         emmet_ls = {
           filetypes = { "html", "css", "javascript", "typescriptreact", "javascriptreact" },
         },
+        kotlin_language_server = {},
       },
     },
   },
